@@ -1,0 +1,352 @@
+@import "reset.styl"
+@import "fonts.styl"
+textDark(size=2vw, fntFam=FuturaMedium)
+	font-size size
+	color #323f45
+	font-family fntFam
+cLight = #f5f5f5
+cRed = #b02f19
+cDark = #222629
+textLight(size=2vw, fntFam=FuturaMedium)
+	font-size size
+	color #f5f5f5
+	font-family fntFam
+hr
+	border-radius 0
+	text-align left
+	
+*
+	margin 0
+	padding 0
+@import "nav.styl"	
+#preloader
+	position fixed
+	left 0
+	top 0
+	width 100%
+	height 100%
+	background-color cLight
+	z-index 10
+	.loader
+		width 3.5vmax
+		height 3.5vmax
+		border 2px solid rgba(176,47,25,0.1)
+		border-radius 50%
+		border-top-color cRed
+		position absolute
+		left 50%
+		top 57%
+		transform translate(-50%,-50%)
+		animation 1s spin infinite linear
+	.loaderTxt
+		color cDark
+		position absolute
+		width 100%
+		text-align center
+		left 50%
+		top 45%
+		font-family FuturaLight
+		font-size 5vmax
+		transform translate(-50%,-50%)
+	sup
+		font-size 1vmax
+		position absolute
+		left 68%
+		top 43%
+		color cRed
+body, html {
+  margin: 0;
+  overflow: hidden;
+  -webkit-transition: opacity 400ms;
+  -moz-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+
+body, .onepage-wrapper, html {
+  display: block;
+  position: static;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.onepage-wrapper {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  padding: 0;
+  -webkit-transform-style: preserve-3d;
+}
+
+.onepage-wrapper .section {
+  width: 100%;
+  height: 100%;
+}
+
+.onepage-pagination {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  z-index: 5;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.onepage-pagination li {
+  padding: 0;
+  text-align: center;
+}
+.onepage-pagination li a{
+  padding: 10px;
+  width: 4px;
+  height: 4px;
+  display: block;
+  
+}
+.onepage-pagination li a:before{
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(176,47,25,0.85);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+.onepage-pagination li a.active:before{
+  width: 10px;
+  height: 10px;
+  background: none;
+  border: 1px solid cRed;
+  margin-top: -4px;
+  left: 8px;
+}
+
+.disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
+  overflow: auto;
+}
+
+.disabled-onepage-scroll .onepage-wrapper .section {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+}
+.disabled-onepage-scroll .onepage-wrapper {
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  transform: none !important;
+  -ms-transform: none !important;
+  min-height: 100%;
+}
+
+
+.disabled-onepage-scroll .onepage-pagination {
+  display: none;
+}
+
+body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
+  position: inherit;
+}		
+#Main
+	display flex
+.mainTxt
+	width 50%
+	height 100%
+	display flex
+	flex-direction column
+	align-items center
+	justify-content center
+	.logo
+		min-height 25vmax
+		min-width 25vmax 
+		margin 0 auto
+		/*.logoImg
+			background-image url(../img/LogoWT.png)
+			margin-left auto
+ 			margin-right auto
+  			padding-bottom 100%
+  			background-size contain
+			background-position 50% 50%
+			background-repeat no-repeat*/
+		.logo_wrapper
+			overflow hidden
+			position relative
+			width 100%
+			padding-bottom 100%
+			.logo_conteiner
+				position absolute
+				top 0
+				left 0
+				width 100%
+				height 100%
+				background-image url(../img/LogoWT.png)
+				background-size contain
+				background-position 50% 50%
+				background-repeat no-repeat
+				
+			
+	.AI
+		padding-top 10px
+		font-family FuturaMedium
+		font-size 4vmax
+		color cRed
+	.Ai
+		font-family FuturaLight
+		font-size 2vmax
+		width 100%
+		height 5%
+		text-align center
+		position relative
+		display flex
+		justify-content center
+		p
+			position absolute
+			left 0
+			width 100%
+.Ai1
+	animation blinkText 8s linear infinite
+.Ai2
+	opacity 0
+	animation blinkText 8s 4s linear  infinite
+
+.mainImg
+	width 50%
+	height 100%
+	background-image url(../img/farzad-nazifi-71686.jpg)
+	background-position 50% 50%
+	background-size cover
+	position relative
+.buttonDark
+	width 40%
+	text-decoration none
+	background-color rgba(5,5,5,0)
+	border-color #222629
+	border-style solid
+	border-size 2 px
+	font-family FuturaBook
+	font-size 2.5vmax
+	color #222629
+	z-index 2
+.arrowMain
+	position absolute
+	width 30px
+	height 30px
+	top 90%
+	right 45%
+	border-style solid
+	background-color transparent !important
+	border-width 0 2px 2px 0
+	z-index 2
+	transform rotate(45deg)
+	animation blink 3s linear infinite
+	cursor pointer
+@keyframes blink
+	0%
+		border-color rgba(255, 255, 255, 1)
+	50%
+		border-color rgba(255, 255, 255, 0)
+	100%
+		border-color rgba(255, 255, 255, 1)
+@keyframes blinkText
+	0%,100%
+		opacity 1
+	50%,75%,25%
+		opacity 0
+@keyframes spin
+	from
+		transform translate(-50%,-50%) rotate(0deg)
+	to
+		transform translate(-50%,-50%) rotate(360deg)
+@keyframes shake
+	from, to
+		transform translate3d(0,0,0)
+	10%, 30%, 50%, 70%, 90%
+		transform translate3d(-10px,0,0)
+	20%, 40%, 60%, 80%
+		transfotm translate3d(10px,0,0)
+.shake
+	animation shake 0.1s 2
+	animation-fill-mode both
+	border cRed 1px solid
+	box-shadow 0 0 5px rgba(226,77,51,1)
+
+@import "about.styl"
+@import 'education.styl'
+@import 'skill.styl'
+@import 'ido.styl'
+@import 'portfolio.styl'
+@import 'footer.styl'
+@import 'Paralax.styl'
+
+@media screen and (max-width: 1000px)
+	.aboutContacts
+		font-size 2vmax
+		margin-left 10%                  
+	.educationTheme
+		padding-right 2vmax !important
+	.educationMain
+		flex-direction column
+		.educationTheme
+			text-align right
+			color cDark
+	.vgu
+		font-size 4vmax
+		span
+			font-size 2.5vmax
+	.facultet
+		font-size 3vmax
+	.spec
+		font-size 2.5vmax
+	#skill
+		justify-content flex-start
+		svg
+			flex-basis 500px
+			height 70%
+			padding-left 5%
+	.sk
+		flex-basis 500px
+		font-size 2.5vmax
+		margin-top 5%
+		height 35%
+	.skillHr
+		width 20%
+	.themeSkill
+		font-size 6vmax
+	.brTxt
+		display none
+	.humburger
+		width 100px
+		height 100px
+		span
+			top 50px
+			left 18px
+			right 18px
+			height 5px
+			&::before
+				top -20px
+				right 13px
+				height 5px
+			&::after
+				bottom -20px
+				right 13px
+				height 5px
+	.University1
+		.vgu
+			padding-top 10%
+	.University2
+		.vgu
+			padding-top 5%
+	.nowRead
+		font-size 3.5vmax
+	.book
+		font-size 3vmax
+		span
+			font-size 2.5vmax
+	.spisok
+		font-size 2.5vmax
+	
+			
+
+		

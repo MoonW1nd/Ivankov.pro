@@ -1,0 +1,116 @@
+.portfolioMain
+	display flex
+	flex-direction column
+	align-items center
+	position relative
+	overflow hidden
+	padding-top 2%
+	box-sizing border-box
+	background-color white !important
+.prt
+	height 25%
+	display flex
+	flex-direction column
+	justify-content center
+	align-items center
+	hr
+		width 60%
+
+.portfolio
+	textDark(6vw,BebasBold)
+.portfolioTxtSmall
+	font-family FuturaLight
+	font-size 2vmax
+	color #5b5b5b
+.portfolioFilter
+	display flex
+	justify-content center
+	div
+		padding 1vmax
+		font-family BebasLight
+		font-size 2vmax
+		p
+			span 
+				color #AF301A
+.portfolioImg
+	display flex
+	height 75%
+	width 70%
+	justify-content space-around
+	flex-wrap wrap
+	z-index 2
+.works
+	flex-grow 1
+	flex-basis 30%
+	height	46%
+	margin 1%
+	background-color #b88b58
+	border 0
+	border-color rgba(255,255,255,0)
+	position relative
+.works_hide
+	width 100%
+	height 100%
+	position absolute
+	background-color rgba(255,255,255,0)
+	&:hover
+		background-color rgba(255,255,255,0.7)
+		transition background-color 1s
+.worksBorder
+	border 0
+	box-sizing border-box
+	box-shadow inset 0 0 0 2px rgba(255,255,255,0)
+	color #b88b58
+	font-size inherit
+	position relative
+	width 92%
+	height 90%
+	margin 4%
+	vertical-align middle
+	&::before,
+	&::after
+		box-sizing inherit
+		content ''
+		position absolute
+		width 100%
+		height 100%
+		top 0
+		left 0
+		transform-origin center
+	&::before
+		border-top 2px solid cDark
+		border-bottom 2px solid cDark
+		transform scale3d(0,1,1)
+	&::after
+		border-left 2px solid cDark
+		border-right 2px solid cDark
+		transform scale3d(1,0,1)
+	&:hover
+		color cRed
+		// background-color rgba(255,255,255,0.5)
+	&:hover::before,
+	&:hover::after
+		transform scale3d(1,1,1)
+		transition transform 1s
+		
+.portfolioCount
+	font-size 45vh
+	font-family BebasBold
+	line-height 100%
+	color cDark
+	position absolute
+	right 0
+	top 70%
+	z-index 1
+.imgport_1
+	background-image url(../img/LogoV3.jpg)
+	background-size cover
+	background-position 50% 50%
+.imgport_2
+	background-image url(../img/art.jpg)
+	background-size cover
+	background-position 50% 50%
+.imgport_3
+	background-image url(../img/Stakan.jpg)
+	background-size cover
+	background-position 50% 0%
