@@ -1,4 +1,5 @@
 CV - Site about me and my project
+Web-site: http://alexanderivankov.ru/
 То что предстоит сделать:
 - переписать главную страницу с упором на freelance
 - добавить блог
