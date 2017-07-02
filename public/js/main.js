@@ -22,12 +22,10 @@ jQuery(document).ready(function($) {
 
 var f = document.querySelectorAll('.wrapper');
 var i;
-	console.log(f);
 	window.onload = function takeHeight() {
 	var h = document.documentElement.clientHeight;
 	for (i=0;i<f.length;i++)
 	{
-		console.log(i);
 		f[i].style.height = h+"px";
 	}
 	}
@@ -35,7 +33,6 @@ function restartAnimation (selector) {
 	var el = selector;
 	newone = el.clone(true);
 	el.before(newone);
-	console.log(el);
 	el.remove();
 }
 $(document).ready(function() {
@@ -86,7 +83,6 @@ $(document).ready(function() {
 				message: $('[name="message"]').val()
 			}, function(data){
 				var result = parseInt(data);
-				console.log(result);
 				switch(result) {
 					case 1: $('.result').html("Введите имя");
 							removeAllClass ();
@@ -179,14 +175,11 @@ if(w>h){
 		var skillName = ["HTML5/CSS3", "JavaScript", "JQuery" , "PHP", "Illustrator", "Photoshop", "MySQL"]
 		var barPadding = h*0.06;//отступы
 		var hmargin=h*0.03;//отступы сверху и снизу
-		console.log(h);
 		var hgraph=h-hmargin*2;
-		console.log(h);
 		var svg = d3.selectAll("#skill")
 					.append("svg")
 					.attr("width", "56%")//размер окна
 					.attr("height", "85%");
-					console.log(d3.select("#skill"));
 		var yAxisLength = h -  barPadding;
 		var xScale = d3.scaleLinear()
 						.domain([0, 100])
@@ -263,13 +256,11 @@ $(window).resize(function(){
 	var hResize = document.documentElement.clientHeight;
 	for (i=0;i<f.length;i++)
 	{
-		console.log(i);
 		f[i].style.height = hResize+"px";
 	}
 	$("#skill svg").remove();
 	w = document.documentElement.clientWidth; //ширина график
 	h = document.documentElement.clientHeight;
-	console.log(w+" "+h)
 	if(w>h&&w>1000){
 		 w*=0.55; //ширина график
 		 h*=0.85; //высота график
@@ -286,14 +277,11 @@ $(window).resize(function(){
 		var skillName = ["HTML5/CSS3", "JavaScript", "JQuery" , "PHP", "Illustrator", "Photoshop", "MySQL"]
 		var barPadding = h*0.06;//отступы
 		var hmargin=h*0.03;//отступы сверху и снизу
-		console.log(h);
 		var hgraph=h-hmargin*2;
-		console.log(h);
 		var svg = d3.selectAll("#skill")
 					.append("svg")
 					.attr("width", "56%")//размер окна
 					.attr("height", "85%");
-					console.log(d3.select("#skill"));
 		var yAxisLength = h -  barPadding;
 		var xScale = d3.scaleLinear()
 						.domain([0, 100])
@@ -366,7 +354,6 @@ $(window).resize(function(){
 			$('rect').filter(':odd').css("fill", "#abb7b7");
 
 			$('rect').hover(function(){
-					console.log(pIndex);
 					var indexRect=$(this).attr('class').charAt(2);
 					var percentD = $('.percentDiag');
 					for(i=0;i<percentD.length;i++) {
@@ -439,7 +426,6 @@ switch (ind) {
 
 $(document).ready(function(){
 	$('rect').hover(function(){
-		console.log(pIndex);
 		var indexRect=$(this).attr('class').charAt(2);
 		var percentD = $('.percentDiag');
 		for(i=0;i<percentD.length;i++) {
@@ -603,7 +589,6 @@ $(document).ready(function(){
         history.pushState( {}, document.title, href );
       }
       el.transformPage(settings, pos, next.data("index"));
-      console.log(next.data("index"));
       pIndex=next.data("index");
       rectAnim();
       caseMenu(pIndex);       
@@ -641,7 +626,6 @@ $(document).ready(function(){
         history.pushState( {}, document.title, href );
       }
       el.transformPage(settings, pos, next.data("index"));
-      console.log(next.data("index"));//обработка движения вверх
       pIndex=next.data("index");
       rectAnim();
       caseMenu(pIndex);
@@ -793,7 +777,6 @@ $(document).ready(function(){
 
     if(window.location.hash != "" && window.location.hash != "#1") {
       init_index =  window.location.hash.replace("#", "")
-      console.log(init_index);
       pIndex=init_index;
       rectAnim();
       if (parseInt(init_index) <= total && parseInt(init_index) > 0) {
@@ -839,7 +822,6 @@ $(document).ready(function(){
       });
 
       var elemNav=$(".spsk a");
-		console.log(elemNav);
 		elemNav.bind("click", function (){
 		switch($(this).attr("id")) {
 			case 'up': el.moveTo(1);break;
