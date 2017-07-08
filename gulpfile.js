@@ -25,14 +25,14 @@ gulp.task('styles', function(){
 // gulp.task('php', function(){
 //   connectPHP.server({ base: './public', keepalive:true, hostname: 'localhost', port:8080, open: false});
 // });
-gulp.task('browserSync', function() {
-    browserSync.init({
-        proxy: 'Portfolio.dev'
-    });
-    browserSync.watch('public/*.php').on('change', function () {
-        browserSync.reload();
-    });
-});
+// gulp.task('browserSync', function() {
+//     browserSync.init({
+//         proxy: 'Portfolio.dev'
+//     });
+//     browserSync.watch('public/*.php').on('change', function () {
+//         browserSync.reload();
+//     });
+// });
 //  gulp.task('browserSyn', function() {
 //     connectPHP.server({base: './public', keepalive:true,hostname: 'localhost',port:9000,open: false}, function (){
 //         browserSync.init({
@@ -62,11 +62,12 @@ gulp.watch('frontend/css/**/*.*', ['styles']);
     gulp.watch('frontend/assets/**/*.*', ['assets']);
 });
 
+
 gulp.task('serve', function () {
     browserSync.init({
-        server: 'public'
+        proxy:"localhost",
+        notify: false
     });
     browserSync.watch('public/**/*.*').on('change', browserSync.reload);
-})
-//
+});
     

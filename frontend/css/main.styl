@@ -161,7 +161,7 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
 	.logo
 		min-height 23vmax
 		min-width 23vmax
-		padding 3vmax
+		padding 3vmax 0 4vmax 0
 		margin 0 auto
 		/*.logoImg
 			background-image url(../img/LogoWT.png)
@@ -220,16 +220,21 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
 	background-size cover
 	position relative
 .buttonDark
-	width 12vw
+	text-align center
+	width 40%
 	text-decoration none
 	background-color rgba(5,5,5,0)
 	border-color #222629
 	border-style solid
-	border-size 3 px !important
+	border-size 2 px
 	font-family FuturaBook
 	font-size 2.5vmax
 	color #222629
+	transition all 1s
 	z-index 2
+.buttonDark:hover
+	border-color cRed !important
+	color cRed
 .arrowMain
 	position absolute
 	width 30px
@@ -281,7 +286,7 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
 @import 'footer.styl'
 @import 'Paralax.styl'
 
-@media screen and (max-width: 1000px)
+@media screen and (orientation:portrait)
 	.aboutContacts
 		font-size 2vmax
 		margin-left 10%                  
@@ -301,13 +306,14 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
 	.spec
 		font-size 2.5vmax
 	#skill
+		flex-wrap wrap
 		justify-content flex-start
 		svg
-			flex-basis 500px
+			// flex-basis 500px
 			height 70%
 			padding-left 5%
 	.sk
-		flex-basis 500px
+		// flex-basis 500px
 		font-size 2.5vmax
 		margin-top 5%
 		height 35%
@@ -347,6 +353,90 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
 			font-size 2.5vmax
 	.spisok
 		font-size 2.5vmax
+	.footerContact
+		flex-basis 500px
+		height 35% !important
+		hr
+			width 35%
+		.contactTheme
+			align-self center
+	.FooterForm
+		padding-top 0
+		flex-basis 500px
+		height 45% !important
+	.footerMain
+		flex-wrap wrap
+	.formSubmit
+		width 40% !important
+		height 4vmax !important
+		padding-top 0.3vmax !important
+	.result
+		font-size 2vmax
+		padding-top 0.1vmax
+	.prt
+		height 20%
+		justify-content space-between
+	.portfolioFilter
+		div
+			font-size 3vmax
+	.portfolio
+		font-size 7vmax
+	.portfolioTxtSmall
+		font-size 3vmax
+	.portfolioImg
+		height 80%
+		width 90%
+	.worksBorder
+		height 96%
+	.doZakazTxt
+		color cLight !important
+		font-size 2.5vmax !important
+		span
+			font-size 5vmax !important
+	.doZakazCont
+		font-size 2.3vmax !important
+	.doDesignTheme
+		font-size 7vmax !important
+	.doDesign
+		width 60%
+		font-size 3vmax !important
+		hr
+			width 60%
+	.doWeb
+		width 55%
+		font-size 3vmax !important
+	.doWebTxt
+		font-size 7vmax !important
+	.educationRead
+		margin-bottom 2vmax
+		margin-left 2vmax
+	.loaderTxt
+		span
+			display block
+			color cRed
+			font-size 2vmax
+	#preloader
+		sup
+			display none
+	.portfolioImgName
+		font-size 2.3vmax !important
+		span
+			font-size 2vmax !important
+	.portfolioView
+		font-size 2vmax !important
+		
+@media screen and (orientation:landscape)
+	.loaderTxt
+		span
+			display none
+	#skill
+		flex-wrap nowrap 
+		justify-content center
+		align-items center
+
+	.sk
+		font-size 2vmax
+		height 70%
 	
 			
 

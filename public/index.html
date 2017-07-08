@@ -2,15 +2,20 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+<!--	<meta name="viewport" content="width=device-width">-->
 	<title> Alexander Ivankov| Web-разработка</title>
 	<script type="text/javascript" src="js/d3.js"></script>
 	<script type="text/javascript" src="js/jquery-3.2.0.js"></script>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">	
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href='
+    Chrome'>
 </head>
 <body>
 	<div id="preloader">
-		<div class="loaderTxt">Alexander Ivankov</div>
+		<div class="loaderTxt">Alexander Ivankov <br>
+		<span>&beta;-версия</span></div>
 		<sup>&beta;</sup>
 		<div class="loader"></div>
 	</div>
@@ -69,7 +74,7 @@
 					<a name='mailAb' href="mailto:AlexanderIvankoff@gmail.com">AlexanderIvankoff@gmail.com</a>
 				</div>
 				<form class='aboutform'>
-						<button class="buttonDark">Резюме</button>
+						<a class="buttonDark" target="_blank" href="http://hh.ru/resume/269ff2c8ff03c00fb40039ed1f74394f706f34">Резюме</a>
 				</form>
 
 			</div>
@@ -114,12 +119,12 @@
 				<p> Навыки</p>
 			</div>
 			<hr class="skillHr" size="5" noshade="" color="#b02f19">
-			<div class="skTxt">
-			    <p><span class="bld">Иностранные языки</span><br>Английский язык - Intermediate</p>
-			</div>
-			<div class="skTxt"><p><span class="bld">Знаком с</span><br>Gulp, Git, npm, Node.js, D3.js</p></div>
-			<div class="skTxt"><p><span class="bld">Скорость "слепой" печати</span><br>qwerty ~ 160 сим/мин, <br class="brTxt">йцукен ~ 200 сим/мин</p></div>
-<!-- 			<div class="skillCount">03</div> -->
+			<div class="skTxt"><p><span class="bld">Работаю с</span><br>Gulp, Git, AJAX, D3.js, Apache, Stylus, Sass, PhpStorm, SublimeText</p></div>
+			<div class="skTxt"><p><span class="bld">Скорость "слепой" печати</span><br>Eng ~ 160 сим/мин, <br class="brTxt">Ru ~ 200 сим/мин</p></div>
+            <div class="skTxt">
+                <p><span class="bld">Иностранные языки</span><br>Английский язык - Intermediate</p>
+            </div>
+            <!-- 			<div class="skillCount">03</div> -->
 		</div>
 		</div>
 	</section>
@@ -165,12 +170,30 @@
 			</div>
 		</div>
 		<div class="portfolioImg">
-			<div class="works imgport_1"><div class="works_hide"> <div class="worksBorder"></div></div></div>
-			<div class="works imgport_2"><div class="works_hide"> <div class="worksBorder"></div></div></div>
-			<div class="works imgport_3"><div class="works_hide"> <div class="worksBorder"></div></div></div>
-			<div class="works imgport_4"><div class="works_hide"> <div class="worksBorder"></div></div></div>
-			<div class="works imgport_5"><div class="works_hide"> <div class="worksBorder"></div></div></div>
-			<div class="works imgport_6"><div class="works_hide"> <div class="worksBorder"></div></div></div>
+			<div class="works imgport_1"><div class="works_hide"> <div class="worksBorder">
+				<div class="portfolioImgName">Alexander Ivankoff Logo</div>
+				<a class="portfolioView">Посмотреть</a>
+			</div></div></div>
+			<div class="works imgport_2"><div class="works_hide"> <div class="worksBorder">
+				<div class="portfolioImgName">Векторная графика</div>
+				<a class="portfolioView">Посмотреть</a>
+			</div></div></div>
+			<div class="works imgport_3"><div class="works_hide"> <div class="worksBorder">
+				<div class="portfolioImgName">Промо страница "Граненый стакан"</div>
+				<a class="portfolioView">Посмотреть</a>
+			</div></div></div>
+			<div class="works imgport_4"><div class="works_hide"> <div class="worksBorder">
+				<div class="portfolioImgName">Smoke Курьер <br> <span>Сайт по аренде кальянов</span></div>
+				<a class="portfolioView" href="http://smokecourier.ru/" target="_blank">Посмотреть</a>
+			</div></div></div>
+			<div class="works imgport_5"><div class="works_hide"> <div class="worksBorder">
+				<div class="portfolioImgName">Eazy Breezy <br> <span>Сайт кальянной</span></div>
+				<a class="portfolioView">Посмотреть</a>
+			</div></div></div>
+			<div class="works imgport_6"><div class="works_hide"> <div class="worksBorder">
+				<div class="portfolioImgName">Скоро здесь будет что-то интересное :)</div>
+				<!-- <a class="portfolioView">Посмотреть</a> -->
+			</div></div></div>
 		</div>
 		<!-- <div class="portfolioCount">05</div> -->
 	</div>
@@ -179,15 +202,15 @@
 	<footer class="wrapper">
 	<div class="footerMain">
 		<div class="footerContact">
-			<p>Котакты</p>
-			<hr size="8" noshade="" color="#b02f19">
+			<p class="contactTheme">Котакты</p>
+			<hr class="contactTheme" size="8" noshade="" color="#b02f19">
 			<a href="tel:+79828142488"><i class="fa fa-phone" aria-hidden="true"></i> &nbsp;+7 982 814 24 88</a>
 			<br>
 			<a href="mailto:AlexanderIvankoff@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; AlexanderIvankoff@gmail.com</a>
 			<p class="sity"><i class="fa fa-skype" aria-hidden="true"></i>&nbsp;&nbsp; MoonW1nd</p>
-			<a href="https://www.instagram.com/moonw1nd/"><i class="fa fa-instagram" aria-hidden="true"></i>&nbsp;&nbsp; MoonW1nd</a>	<br>
-			<a href="https://www.facebook.com/alexanderivankoff"><i class="fa fa-facebook-square" aria-hidden="true"></i>&nbsp;&nbsp; Александр Иванков</a>	<br>
-			<a href="https://vk.com/s.ivankoff"><i class="fa fa-vk" aria-hidden="true"></i>&nbsp; Sashka Ivankoff</a>
+			<a href="https://www.instagram.com/moonw1nd/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>&nbsp;&nbsp; MoonW1nd</a>	<br>
+			<a href="https://www.facebook.com/alexanderivankoff" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i>&nbsp;&nbsp; Александр Иванков</a>	<br>
+			<a href="https://vk.com/s.ivankoff" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i>&nbsp; Sashka Ivankoff</a>
 		</div>
 		<form class="FooterForm">
 			<input class="txt" type="text" name="name"  placeholder="Ваше имя"><br>
@@ -223,4 +246,4 @@
 	</div>
 </body>
 <script type="text/javascript" src='js/main.js'></script>
-</html>	
+</html>
