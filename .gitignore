@@ -1,4 +1,2 @@
-.idea/workspace.xml
-frontend/.DS_Store
-frontend/assets/.DS_Store
-node_modules/
+node_modules
+.idea
