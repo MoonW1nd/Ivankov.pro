@@ -25,6 +25,8 @@
   },
   "devDependencies": {
     "gatsby-plugin-sass": "^2.0.10",
-    "node-sass": "^4.11.0"
+    "gatsby-plugin-typescript": "^2.0.7",
+    "node-sass": "^4.11.0",
+    "typescript": "^3.3.3"
   }
 }
