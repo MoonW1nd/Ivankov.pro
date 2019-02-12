@@ -1,3 +1,4 @@
 import React from "react"
+import './index.scss'
 
-export default () => <div>Hello world!</div>
+export default () => <div className="Container"><h1>Hello world!</h1></div>

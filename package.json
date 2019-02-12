@@ -22,5 +22,9 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "devDependencies": {
+    "gatsby-plugin-sass": "^2.0.10",
+    "node-sass": "^4.11.0"
   }
 }
