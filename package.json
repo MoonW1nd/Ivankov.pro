@@ -1,7 +1,7 @@
 {
   "name": "gatsby-starter-hello-world",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Personal site Alexander Ivankov",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -16,17 +16,35 @@
     "react": "^16.8.1",
     "react-dom": "^16.8.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
   "devDependencies": {
+    "@types/react": "^16.8.2",
+    "@types/react-dom": "^16.8.0",
+    "css-property-sort-order-smacss": "^2.1.3",
     "gatsby-plugin-sass": "^2.0.10",
     "gatsby-plugin-typescript": "^2.0.7",
     "node-sass": "^4.11.0",
+    "stylelint": "^9.10.1",
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-order": "^2.0.0",
+    "stylelint-scss": "^3.5.3",
+    "tslint": "^5.12.1",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-react": "^3.6.0",
     "typescript": "^3.3.3"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoonW1nd/Ivankov.pro.git"
+  },
+  "keywords": [
+    "site",
+    "personal",
+    "site"
+  ],
+  "author": "Alexander Ivankov",
+  "bugs": {
+    "url": "https://github.com/MoonW1nd/Ivankov.pro/issues"
+  },
+  "homepage": "https://github.com/MoonW1nd/Ivankov.pro#readme"
 }
