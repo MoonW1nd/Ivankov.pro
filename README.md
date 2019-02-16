@@ -1,7 +1,9 @@
- # CV - Site about me and my project** </br>
-##### Web-site(beta):[AlexanderIvankov.ru](http://alexanderivankov.ru/)</br>
-==========================================================================
-## То что предстоит сделать:
+ # CV - Site about me and my project </br>
+##### Web-site(beta):[Ivankov.pro](http://ivankov.pro/)</br>
+
+<hr>
+
+## Todo:
 - [ ] переписать главную страницу с упором на freelance
 - [ ] сделать mind-map структуры сайта
 - [ ] добавить блог
