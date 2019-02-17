@@ -1,7 +1,25 @@
- # CV - Site about me and my project </br>
-##### Web-site(beta):[Ivankov.pro](http://ivankov.pro/)</br>
+# Site about me and my project </br>
+## Links.
+- [Ivankov.pro](http://ivankov.pro/)</br>
+- [Figma](https://www.figma.com/file/P0MotXWiDFi4EH1rgxM4zaZ3/AlexanderIvankoff.ru?node-id=117%3A93)
+- [Projects board](https://github.com/users/MoonW1nd/projects/1)
+- [Issues](https://github.com/MoonW1nd/Ivankov.pro/issues)
 
 <hr>
+
+## Start developing.
+
+Navigate into your new site’s directory and start it up.
+
+```bash
+cd Ivankov.pro/
+npm i
+gatsby develop
+```
+
+Site is now running at http://localhost:8000!
+
+> Note: You'll also see a second link: http://localhost:8000/___graphql. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the Gatsby tutorial.
 
 ## Todo:
 - [ ] переписать главную страницу с упором на freelance
@@ -26,4 +44,3 @@
 - [ ] добавить аккаунты с CodeWars и StackOverfow
 - [ ] сделать лендинг с NodeSchool Moscow и организовать его
 - [ ] add new projects
-
