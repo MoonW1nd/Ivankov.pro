@@ -1,11 +1,8 @@
 # Site about me and my project </br>
-## Links.
-- [Ivankov.pro](http://ivankov.pro/)</br>
-- [Figma](https://www.figma.com/file/P0MotXWiDFi4EH1rgxM4zaZ3/AlexanderIvankoff.ru?node-id=117%3A93)
-- [Projects board](https://github.com/users/MoonW1nd/projects/1)
-- [Issues](https://github.com/MoonW1nd/Ivankov.pro/issues)
-
-<hr>
+[Ivankov.pro](http://ivankov.pro/)</br>
+[Figma](https://www.figma.com/file/P0MotXWiDFi4EH1rgxM4zaZ3/AlexanderIvankoff.ru?node-id=117%3A93)</br>
+[Projects board](https://github.com/users/MoonW1nd/projects/1)</br>
+[Issues](https://github.com/MoonW1nd/Ivankov.pro/issues)</br>
 
 ## Start developing.
 
