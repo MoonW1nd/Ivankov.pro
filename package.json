@@ -11,17 +11,27 @@
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS -g './commitlint.config.js'"
+    }
+  },
   "dependencies": {
     "gatsby": "^2.0.119",
     "react": "^16.8.1",
     "react-dom": "^16.8.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^7.5.2",
+    "@commitlint/config-conventional": "^7.5.0",
     "@types/react": "^16.8.2",
     "@types/react-dom": "^16.8.0",
     "css-property-sort-order-smacss": "^2.1.3",
     "gatsby-plugin-sass": "^2.0.10",
     "gatsby-plugin-typescript": "^2.0.7",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.4",
     "node-sass": "^4.11.0",
     "stylelint": "^9.10.1",
     "stylelint-config-recommended": "^2.1.0",
@@ -31,6 +41,16 @@
     "tslint-eslint-rules": "^5.4.0",
     "tslint-react": "^3.6.0",
     "typescript": "^3.3.3"
+  },
+  "lint-staged": {
+    "*.[ts, tsx]": [
+      "tslint --fix",
+      "git add"
+    ],
+    "*.{sass, scss, css}": [
+      "stylelint --fix",
+      "git add"
+    ]
   },
   "main": "index.js",
   "repository": {
