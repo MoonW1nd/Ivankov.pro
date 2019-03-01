@@ -46,6 +46,10 @@
     "*.[ts, tsx]": [
       "tslint --fix",
       "git add"
+    ],
+    "*.{sass, scss, css}": [
+      "stylelint --fix",
+      "git add"
     ]
   },
   "main": "index.js",
