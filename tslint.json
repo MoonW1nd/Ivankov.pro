@@ -86,7 +86,7 @@
             true,
             2
         ],
-        "no-default-export": true,
+        "no-default-export": false,
         "prefer-const": true,
         "array-type": [
             true,

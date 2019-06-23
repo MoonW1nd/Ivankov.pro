@@ -9,6 +9,8 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "lint:ts": "./node_modules/.bin/tslint ./src/**/*.+\\(ts\\|tsx\\)",
+    "lint:style": "./node_modules/.bin/stylelint ./src/**/*.+\\(sass\\|scss\\|css\\)",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "husky": {
@@ -44,11 +46,11 @@
   },
   "lint-staged": {
     "*.[ts, tsx]": [
-      "tslint --fix",
+      "npm run lint:ts --fix",
       "git add"
     ],
     "*.{sass, scss, css}": [
-      "stylelint --fix",
+      "npm run lint:style --fix",
       "git add"
     ]
   },

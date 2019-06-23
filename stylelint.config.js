@@ -48,7 +48,7 @@ const config = {
         'no-eol-whitespace': true,
         'no-missing-end-of-source-newline': true,
         'unit-case': 'lower',
-        'color-hex-case': 'upper',
+        'color-hex-case': 'lower',
         'color-hex-length': 'short',
         'linebreaks': 'unix'
         },
