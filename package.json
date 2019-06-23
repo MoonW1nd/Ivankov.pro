@@ -21,6 +21,8 @@
   },
   "dependencies": {
     "gatsby": "^2.0.119",
+    "gatsby-source-filesystem": "^2.1.0",
+    "gatsby-transformer-remark": "^2.5.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1"
   },
