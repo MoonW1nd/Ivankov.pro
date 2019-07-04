@@ -11,7 +11,9 @@
     "serve": "gatsby serve",
     "lint:ts": "./node_modules/.bin/tslint ./src/**/*.+\\(ts\\|tsx\\)",
     "lint:style": "./node_modules/.bin/stylelint ./src/**/*.+\\(sass\\|scss\\|css\\)",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "husky": {
     "hooks": {
@@ -24,7 +26,8 @@
     "gatsby-source-filesystem": "^2.1.0",
     "gatsby-transformer-remark": "^2.5.0",
     "react": "^16.8.1",
-    "react-dom": "^16.8.1"
+    "react-dom": "^16.8.1",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.5.2",
@@ -70,5 +73,6 @@
   "bugs": {
     "url": "https://github.com/MoonW1nd/Ivankov.pro/issues"
   },
-  "homepage": "https://github.com/MoonW1nd/Ivankov.pro#readme"
+  "homepage": "https://github.com/MoonW1nd/Ivankov.pro#readme",
+  "snyk": true
 }
