@@ -27,7 +27,7 @@
     "gatsby-transformer-remark": "^2.5.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
-    "snyk": "^1.189.0"
+    "snyk": "^1.230.5"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.5.2",
