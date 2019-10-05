@@ -1,11 +1,22 @@
 module.exports = {
   siteMetadata: {
-    title: 'Александр Иванков',
-    description: 'Разработчик интерфейсов',
+    title: 'александр иванков',
+    description: 'разработчик интерфейсов',
   },
   plugins: [
-    `gatsby-plugin-sass`,
     'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-plugin-less',
+      options: {
+        javascriptEnabled: true,
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-antd',
+      options: {
+        style: true
+      }
+    },
     {
       resolve: "gatsby-plugin-ts-loader",
       options: {
