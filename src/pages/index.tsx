@@ -1,6 +1,50 @@
 import React from 'react';
-import './index.scss';
+import {graphql} from 'gatsby';
+import {Typography} from 'antd';
+import {selectSiteMetadata} from '../selectors/siteMetadata';
 
-export const Container = () => <div className='Container'><h1>Hello world!</h1></div>;
+import './index.less';
 
-export default Container;
+const gitHubLogo = require('../../static/github-seeklogo.com.svg');
+
+const {Text} = Typography;
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+        description
+      }
+    }
+  }`;
+
+interface IMetaData {
+  site: {
+    siteMetadata: {
+      title: string,
+      description: string,
+    }
+  };
+}
+
+interface IMainPageProps {
+  data: IMetaData;
+}
+
+export const MainPage = ({data}: IMainPageProps) => (
+  <div className='Root'>
+      <h1 className='Logo'>
+        <Text className='Name'>
+          {selectSiteMetadata<IMetaData, string>(data, 'title')}
+        </Text>
+        <Text className='Description'>
+          {selectSiteMetadata<IMetaData, string>(data, 'description')}
+        </Text>
+      </h1>
+      <img className='GitHubLogo' src={gitHubLogo}/>
+  </div>
+);
+
+export default MainPage;
+
