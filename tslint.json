@@ -33,6 +33,7 @@
         "no-empty-interface": true,
         "no-internal-module": true,
         "no-var-requires": false,
+        "jsx-no-multiline-js": false,
         "typedef": [
             true,
             "call-signature",

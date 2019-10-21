@@ -1,9 +1,10 @@
 import React from 'react';
 import {graphql} from 'gatsby';
 import {Typography} from 'antd';
+import AShape from '../components/AShape';
 import {selectSiteMetadata} from '../selectors/siteMetadata';
 
-import './index.less';
+import './styles.less';
 
 const gitHubLogo = require('../../static/github-seeklogo.com.svg');
 
@@ -43,6 +44,11 @@ export const MainPage = ({data}: IMainPageProps) => (
         </Text>
       </h1>
       <img className='GitHubLogo' src={gitHubLogo}/>
+      <section className='Navigation'>
+        <AShape type='develop'/>
+        <AShape type='design'/>
+        <AShape type='blog'/>
+      </section>
   </div>
 );
 

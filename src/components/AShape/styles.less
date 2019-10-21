@@ -1,0 +1,45 @@
+.AShape {
+  position: relative;
+  width: 439px;
+  height: 486px;
+  margin: 0 -70px;
+  overflow: hidden;
+  text-align: center;
+
+  &-Image {
+    position: absolute;
+
+    &_type_design {
+      top: -50px;
+      left: -70px;
+      width: 1486px;
+      height: 900px;
+      clip-path: url('#clip-design');
+    }
+
+    &_type_develop {
+      top: -115px;
+      left: -76px;
+      width: 1215px;
+      height: 811px;
+      clip-path: url('#clip-develop');
+    }
+
+    &_type_blog {
+      top: -270px;
+      left: -76px;
+      width: 683px;
+      height: 1002px;
+      clip-path: url('#clip-blog');
+    }
+  }
+
+  &-Text {
+    font-size: 700px;
+    font-weight: bold;
+
+    &_reverse {
+      transform: rotate(180deg);
+    }
+  }
+}
