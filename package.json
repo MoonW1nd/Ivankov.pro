@@ -61,11 +61,11 @@
     "typescript": "^3.6.3"
   },
   "lint-staged": {
-    "*.[ts, tsx]": [
+    "*.{ts,tsx}": [
       "npm run lint:ts --fix",
       "git add"
     ],
-    "*.{sass, scss, css}": [
+    "*.{sass,scss,css,less}": [
       "npm run lint:style --fix",
       "git add"
     ]
