@@ -1,10 +1,11 @@
-import React from 'react';
-import {graphql} from 'gatsby';
 import {Typography} from 'antd';
+import {graphql} from 'gatsby';
+import React from 'react';
 import AShape from '../components/a-shape';
+import Logo from '../components/logo';
 import {selectSiteMetadata} from '../selectors/siteMetadata';
 
-import './styles.less';
+import styles from './styles.module.css';
 
 const gitHubLogo = require('../../static/github-seeklogo.com.svg');
 
@@ -35,13 +36,12 @@ interface IMainPageProps {
 }
 
 export const MainPage = ({data}: IMainPageProps) => (
-    <div className="Root">
-        <h1 className="Logo">
-            <Text className="Name">{selectSiteMetadata<IMetaData, string>(data, 'title')}</Text>
-            <Text className="Description">{selectSiteMetadata<IMetaData, string>(data, 'description')}</Text>
+    <div>
+        <h1>
+            <Logo />
         </h1>
-        <img className="GitHubLogo" src={gitHubLogo} />
-        <section className="Navigation">
+        <img className={styles.gitHubLogo} src={gitHubLogo} />
+        <section className={styles.navigation}>
             <AShape type="develop" />
             <AShape type="design" />
             <AShape type="blog" />

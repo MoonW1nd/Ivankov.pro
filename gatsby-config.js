@@ -5,6 +5,11 @@ module.exports = {
   },
   plugins: [
     'gatsby-transformer-remark',
+
+    /**
+     * For styling Ant-design
+     * @see https://ant.design/docs/react/customize-theme
+     */
     {
       resolve: 'gatsby-plugin-less',
       options: {
@@ -17,6 +22,7 @@ module.exports = {
         style: true
       }
     },
+
     {
       resolve: "gatsby-plugin-ts-loader",
       options: {

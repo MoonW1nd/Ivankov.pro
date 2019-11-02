@@ -1,0 +1,46 @@
+.root {
+    position: relative;
+    width: 439px;
+    height: 486px;
+    margin: 0 -70px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.image {
+    position: absolute;
+}
+
+.typeDesign {
+    top: -50px;
+    left: -70px;
+    width: 1486px;
+    height: 900px;
+    clip-path: url('#clip-design');
+}
+
+.typeDevelop {
+    top: -115px;
+    left: -76px;
+    width: 1215px;
+    height: 811px;
+    clip-path: url('#clip-develop');
+}
+
+.typeBlog {
+    top: -270px;
+    left: -76px;
+    width: 683px;
+    height: 1002px;
+    clip-path: url('#clip-blog');
+}
+
+.text,
+.textReverse {
+    font-size: 700px;
+    font-weight: bold;
+}
+
+.textReverse {
+    transform: rotate(180deg);
+}

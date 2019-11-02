@@ -1,4 +1,4 @@
-.Logo {
+.root {
     display: flex;
     position: absolute;
 
@@ -9,30 +9,16 @@
     justify-content: center;
 }
 
-.GitHubLogo {
-    position: absolute;
-    top: 80px;
-    right: 80px;
-}
-
-.Name {
+.name {
     display: inline;
     color: #28334c;
     font-size: 48px;
     font-weight: lighter;
 }
 
-.Description {
+.description {
     margin-top: -5px;
     color: #28334c;
     font-size: 24px;
     font-weight: 300;
-}
-
-.Navigation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
 }
