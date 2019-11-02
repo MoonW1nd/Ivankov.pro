@@ -2,9 +2,12 @@
     "extends": [
         "tslint:latest",
         "tslint-react",
-        "tslint-eslint-rules"
+        "tslint-eslint-rules",
+        "tslint-plugin-prettier",
+        "tslint-config-prettier"
     ],
     "rules": {
+        "prettier": true,
         "only-arrow-functions": false,
         "member-access": [
             true,
@@ -138,10 +141,6 @@
             "check-catch",
             "check-else",
             "check-finally"
-        ],
-        "quotemark": [
-            true,
-            "single"
         ],
         "semicolon": [
             true,
