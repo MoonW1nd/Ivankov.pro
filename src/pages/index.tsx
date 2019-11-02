@@ -1,7 +1,7 @@
 import React from 'react';
 import {graphql} from 'gatsby';
 import {Typography} from 'antd';
-import AShape from '../components/AShape';
+import AShape from '../components/a-shape';
 import {selectSiteMetadata} from '../selectors/siteMetadata';
 
 import './styles.less';
