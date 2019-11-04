@@ -2,9 +2,12 @@
     "extends": [
         "tslint:latest",
         "tslint-react",
-        "tslint-eslint-rules"
+        "tslint-eslint-rules",
+        "tslint-plugin-prettier",
+        "tslint-config-prettier"
     ],
     "rules": {
+        "prettier": true,
         "only-arrow-functions": false,
         "member-access": [
             true,
@@ -33,6 +36,8 @@
         "no-empty-interface": true,
         "no-internal-module": true,
         "no-var-requires": false,
+        "jsx-no-multiline-js": false,
+        "no-implicit-dependencies": [true, ["@components"]],
         "typedef": [
             true,
             "call-signature",
@@ -138,10 +143,6 @@
             "check-else",
             "check-finally"
         ],
-        "quotemark": [
-            true,
-            "single"
-        ],
         "semicolon": [
             true,
             "always",
@@ -161,7 +162,7 @@
             "check-rest-spread"
         ],
         "object-literal-key-quotes": [true, "as-needed"],
-        "ordered-imports": false,
+        "ordered-imports": true,
         "object-curly-spacing": [true, "never"],
         "linebreak-style": [true, "LF"]
     },

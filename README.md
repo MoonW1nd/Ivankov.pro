@@ -1,4 +1,6 @@
 # My personal site </br>
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![CodeFactor](https://www.codefactor.io/repository/github/moonw1nd/ivankov.pro/badge)](https://www.codefactor.io/repository/github/moonw1nd/ivankov.pro) [![Known Vulnerabilities](https://snyk.io/test/github/moonw1nd/ivankov.pro/badge.svg)](https://snyk.io/test/github/moonw1nd/ivankov.pro)
+
 [Ivankov.pro](http://ivankov.pro/)</br>
 [Figma](https://www.figma.com/file/P0MotXWiDFi4EH1rgxM4zaZ3/AlexanderIvankoff.ru?node-id=117%3A93)</br>
 [Projects board](https://github.com/users/MoonW1nd/projects/1)</br>

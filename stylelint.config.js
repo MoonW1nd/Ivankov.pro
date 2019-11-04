@@ -15,12 +15,14 @@ Object.values(orderedPropertyHash).forEach(listOrListOfLists => {
 
 /** @type {Object} Stylelint config object */
 const config = {
-    extends: 'stylelint-config-recommended',
+    extends: ['stylelint-config-recommended', "stylelint-config-prettier"],
     plugins: [
         'stylelint-scss',
-        'stylelint-order'
+        'stylelint-order',
+        "stylelint-prettier",
     ],
     rules: {
+        'prettier/prettier': true,
         'declaration-no-important': true,
         'at-rule-no-unknown': null,
         'at-rule-empty-line-before': [
@@ -32,7 +34,7 @@ const config = {
         ],
         'scss/at-rule-no-unknown': true,
         'scss/at-else-empty-line-before': 'never',
-        indentation: [2, {ignore: ['inside-parens']}],
+        indentation: [4, {ignore: ['inside-parens']}],
         'order/order': [
             [
                 'custom-properties',

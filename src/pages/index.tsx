@@ -1,6 +1,30 @@
+import {graphql} from 'gatsby';
 import React from 'react';
-import './index.scss';
+import AShape from '../components/a-shape';
+import styles from './styles.module.css';
 
-export const Container = () => <div className='Container'><h1>Hello world!</h1></div>;
+import Header from '@components/header';
 
-export default Container;
+export const query = graphql`
+    query {
+        site {
+            siteMetadata {
+                title
+                description
+            }
+        }
+    }
+`;
+
+export const MainPage = () => (
+    <div className={styles.root}>
+        <Header />
+        <section className={styles.navigation}>
+            <AShape type="develop" />
+            <AShape type="design" />
+            <AShape type="blog" />
+        </section>
+    </div>
+);
+
+export default MainPage;

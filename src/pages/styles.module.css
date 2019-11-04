@@ -1,0 +1,16 @@
+.root {
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 900px;
+    height: 100%;
+}
