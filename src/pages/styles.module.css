@@ -1,13 +1,16 @@
-.gitHubLogo {
-    position: absolute;
-    top: 80px;
-    right: 80px;
+.root {
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+    height: 100vh;
 }
 
 .navigation {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    height: 100vh;
+
+    min-width: 900px;
+    height: 100%;
 }

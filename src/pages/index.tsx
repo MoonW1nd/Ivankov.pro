@@ -1,11 +1,9 @@
 import {graphql} from 'gatsby';
 import React from 'react';
 import AShape from '../components/a-shape';
-import Logo from '../components/logo';
-
 import styles from './styles.module.css';
 
-const gitHubLogo = require('../../static/github-seeklogo.com.svg');
+import Header from '@components/header';
 
 export const query = graphql`
     query {
@@ -19,11 +17,8 @@ export const query = graphql`
 `;
 
 export const MainPage = () => (
-    <div>
-        <h1>
-            <Logo />
-        </h1>
-        <img className={styles.gitHubLogo} src={gitHubLogo} />
+    <div className={styles.root}>
+        <Header />
         <section className={styles.navigation}>
             <AShape type="develop" />
             <AShape type="design" />

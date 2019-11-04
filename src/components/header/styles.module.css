@@ -1,0 +1,14 @@
+.root {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 200px;
+
+    padding: 0 80px;
+}
+
+.gitHubLogo {
+    top: 80px;
+    right: 80px;
+}
