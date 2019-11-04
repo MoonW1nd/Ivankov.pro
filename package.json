@@ -11,7 +11,9 @@
     "serve": "gatsby serve",
     "lint:ts": "./node_modules/.bin/tslint ./src/**/*.+\\(ts\\|tsx\\)",
     "lint:style": "./node_modules/.bin/stylelint ./src/**/*.+\\(sass\\|scss\\|css\\|less\\)",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "husky": {
     "hooks": {
@@ -35,7 +37,8 @@
     "less": "^3.10.3",
     "ramda": "^0.26.1",
     "react": "^16.10.2",
-    "react-dom": "^16.10.2"
+    "react-dom": "^16.10.2",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
@@ -91,5 +94,6 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "snyk": true
 }
