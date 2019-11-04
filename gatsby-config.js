@@ -35,6 +35,15 @@ module.exports = {
         name: `pages`,
         path: `${__dirname}/src/pages`,
       }
-    }
+    },
+    {
+        resolve: `gatsby-plugin-alias-imports`,
+        options: {
+          alias: {
+            "@components": "src/components",
+          },
+          extensions: []
+        }
+      }
   ],
 }

@@ -37,6 +37,7 @@
         "no-internal-module": true,
         "no-var-requires": false,
         "jsx-no-multiline-js": false,
+        "no-implicit-dependencies": [true, ["@components"]],
         "typedef": [
             true,
             "call-signature",

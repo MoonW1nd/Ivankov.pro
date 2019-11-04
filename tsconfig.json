@@ -21,7 +21,10 @@
     "importHelpers": true,
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+        "@components/*": ["./src/components/*"]
+    }
   },
   "include": [
     "./src/**/*",
