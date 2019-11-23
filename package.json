@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "Ivankov.pro",
   "private": true,
   "description": "Personal site Alexander Ivankov",
   "version": "0.1.0",
@@ -27,11 +27,11 @@
     "antd": "^3.23.6",
     "classnames": "^2.2.6",
     "commitizen": "^4.0.3",
-    "gatsby": "^2.15.29",
+    "gatsby": "^2.18.2",
     "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby-plugin-antd": "^2.0.2",
     "gatsby-plugin-less": "^3.0.9",
-    "gatsby-plugin-ts-loader": "^0.1.0",
+    "gatsby-plugin-ts": "^2.0.1",
     "gatsby-source-filesystem": "^2.1.29",
     "gatsby-transformer-remark": "^2.6.27",
     "less": "^3.10.3",
@@ -41,7 +41,7 @@
     "snyk": "^1.189.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.2.0",
+    "@commitlint/cli": "^8.3.3",
     "@commitlint/config-conventional": "^7.6.0",
     "@types/ramda": "^0.26.26",
     "@types/react": "^16.9.5",

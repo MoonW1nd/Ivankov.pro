@@ -5,6 +5,16 @@ module.exports = {
   },
   plugins: [
     'gatsby-transformer-remark',
+    {
+      resolve: `gatsby-plugin-ts`,
+      options: {
+        fileName: `src/typings/graphql.d.ts`,
+        /**
+         * @todo Включить как только появятся описания GraphQL schema
+         */
+        codegen: false,
+      }
+    },
 
     /**
      * For styling Ant-design
@@ -20,13 +30,6 @@ module.exports = {
       resolve: 'gatsby-plugin-antd',
       options: {
         style: true
-      }
-    },
-
-    {
-      resolve: "gatsby-plugin-ts-loader",
-      options: {
-        tslint: true
       }
     },
     {
