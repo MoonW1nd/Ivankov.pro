@@ -15,6 +15,7 @@
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect"
   },
+  "heroku-postbuild": "gatsby build",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
