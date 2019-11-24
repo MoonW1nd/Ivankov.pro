@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import {graphql} from 'gatsby';
 import React from 'react';
 import AShape from '../components/a-shape';
@@ -18,8 +19,8 @@ export const query = graphql`
 
 export const MainPage = () => (
     <div className={styles.root}>
-        <Header />
-        <section className={styles.navigation}>
+        <Header className={styles.header} />
+        <section className={cn(styles.navigation, styles.footerSpace)}>
             <AShape type="develop" />
             <AShape type="design" />
             <AShape type="blog" />
