@@ -16,7 +16,7 @@ export interface IIconProps extends IGetClassNameProps {
 }
 
 const getRootClassName = ({className, size}: IGetClassNameProps) =>
-    cn(className, {
+    cn(className, styles.root, {
         [styles.sizeM]: size === 'm',
     });
 

@@ -46,7 +46,6 @@ const config = {
         'string-quotes': 'single',
         'length-zero-no-unit': true,
         'max-empty-lines': 2,
-        'max-line-length': 120,
         'no-eol-whitespace': true,
         'no-missing-end-of-source-newline': true,
         'unit-case': 'lower',
