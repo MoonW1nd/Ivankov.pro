@@ -1,0 +1,8 @@
+.root {
+    position: relative;
+    width: 439px;
+    height: 486px;
+    margin: 0 -70px;
+    overflow: hidden;
+    text-align: center;
+}
