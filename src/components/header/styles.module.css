@@ -14,8 +14,8 @@
     opacity: 0.5;
 }
 
-.link {
-    outline: none;
+.link:focus {
+    outline: transparent;
 }
 
 .link:hover > .gitHubLogo,
