@@ -21,9 +21,9 @@ export const MainPage = () => (
     <div className={styles.root}>
         <Header className={styles.header} />
         <section className={cn(styles.navigation, styles.footerSpace)}>
-            <AShape type="develop" />
-            <AShape type="design" />
-            <AShape type="blog" />
+            <AShape type="develop" url="/" />
+            <AShape type="design" url="/" />
+            <AShape type="blog" url="/" />
         </section>
     </div>
 );

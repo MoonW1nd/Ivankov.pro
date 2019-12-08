@@ -11,4 +11,14 @@
 .gitHubLogo {
     top: 80px;
     right: 80px;
+    opacity: 0.5;
+}
+
+.link {
+    outline: none;
+}
+
+.link:hover > .gitHubLogo,
+.link:focus > .gitHubLogo {
+    opacity: 0.9;
 }

@@ -16,7 +16,7 @@ const Header = ({className}: IHeaderProps) => (
         <h1>
             <Logo />
         </h1>
-        <Link href="https://github.com/MoonW1nd" target={'_blank'}>
+        <Link href="https://github.com/MoonW1nd" className={styles.link} target={'_blank'}>
             <Icon size="m" type="gitHub" className={styles.gitHubLogo} />
         </Link>
     </header>
