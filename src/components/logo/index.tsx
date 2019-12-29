@@ -7,7 +7,9 @@ const {Text} = Typography;
 
 const Logo = () => (
     <span className={styles.root}>
-        <Text className={styles.name}>александр иванков</Text>
+        <Text className={styles.name}>
+            александр<span className={styles.dash}>_</span>иванков
+        </Text>
         <Text className={styles.description}>разработчик интерфейсов</Text>
     </span>
 );
