@@ -7,14 +7,15 @@
 .name {
     display: inline;
     color: #28334c;
-    font-size: 48px;
-    font-weight: lighter;
+    /* calc(minFontSize + (maxFontSize - minFontSize) * (100vw - minScreenSize) / (maxScreenSize-minScreenSize)) */
+    font-size: calc(18px + ((45 - 18) * (100vw - 320px)) / (1440 - 320));
+    font-weight: normal;
 }
 
 .description {
     margin-top: -5px;
     color: #28334c;
-    font-size: 24px;
+    font-size: calc(12px + ((24 - 12) * (100vw - 320px)) / (1440 - 320));
     font-weight: 300;
 }
 
