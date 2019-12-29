@@ -1,15 +1,12 @@
 .root {
     position: relative;
-    width: 439px;
-    height: 486px;
-    margin: 0 -70px;
+    width: 40vmin;
+    margin: 0 -7vmin;
     overflow: hidden;
     text-align: center;
 }
 
-.root:hover > svg,
 .root:focus > svg {
     -webkit-filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.8));
     filter: drop-shadow(2px 2px 2px grey);
 }
-/* 0 1px 6px 0 rgba(32,33,36,0.28); */
