@@ -7,20 +7,3 @@
 
     padding: 0 5vw;
 }
-
-.gitHubLogo {
-    top: 5vw;
-    right: 5vw;
-    width: calc(30px + ((50 - 30) * (100vw - 320px)) / (1440 - 320));
-    height: calc(30px + ((50 - 30) * (100vw - 320px)) / (1440 - 320));
-    opacity: 0.5;
-}
-
-.link:focus {
-    outline: transparent;
-}
-
-.link:hover > .gitHubLogo,
-.link:focus > .gitHubLogo {
-    opacity: 0.9;
-}
