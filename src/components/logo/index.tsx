@@ -1,4 +1,6 @@
 import {Typography} from 'antd';
+import cn from 'classnames';
+import {Link} from 'gatsby';
 import React from 'react';
 
 import styles from './styles.module.css';
@@ -13,11 +15,15 @@ interface ILogo {
 
 const Logo = ({type, showDescription, subLogo}: ILogo) => (
     <span className={styles.root}>
-        <Text className={styles.name}>
-            {type === 'full' && 'александр'}
-            <span className={styles.dash}>_</span>иванков
-            {subLogo && <span className={styles.subLogo}>&nbsp;|&nbsp;{subLogo}</span>}
-        </Text>
+        <div>
+            <Link to="/">
+                <Text className={styles.name}>
+                    {type === 'full' && 'александр'}
+                    <span className={styles.dash}>_</span>иванков
+                </Text>
+            </Link>
+            {subLogo && <Text className={cn(styles.subLogo, styles.name)}>&nbsp;|&nbsp;{subLogo}</Text>}
+        </div>
         {showDescription && <Text className={styles.description}>разработчик интерфейсов</Text>}
     </span>
 );

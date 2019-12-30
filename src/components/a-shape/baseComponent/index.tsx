@@ -1,13 +1,8 @@
-import Link from '@components/link';
 import React from 'react';
 
 import styles from './styles.module.css';
 
-export interface IAShapeExternalProps {
-    url: string;
-}
-
-interface IAShapeProps extends IAShapeExternalProps {
+interface IAShapeProps {
     reflected?: boolean;
     x: number;
     y: number;
@@ -16,11 +11,11 @@ interface IAShapeProps extends IAShapeExternalProps {
     imageUrl: string;
 }
 
-const AShape = ({imageUrl, reflected, width, height, x, y, url}: IAShapeProps) => {
+const AShape = ({imageUrl, reflected, width, height, x, y}: IAShapeProps) => {
     const maskId = reflected ? 'a-shape-mask-reflected' : 'a-shape-mask';
 
     return (
-        <Link className={styles.root} href={url}>
+        <div className={styles.root}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox={`0 ${reflected ? 31 : 0} 490 693`}>
                 <mask id="a-shape-mask">
                     <g fill="white">
@@ -38,7 +33,7 @@ const AShape = ({imageUrl, reflected, width, height, x, y, url}: IAShapeProps) =
                     <image xlinkHref={imageUrl} width={width} height={height} x={x} y={y} />
                 </g>
             </svg>
-        </Link>
+        </div>
     );
 };
 
