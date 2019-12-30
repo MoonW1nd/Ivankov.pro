@@ -1,1 +1,1 @@
-import "./src/styles/global.module.css"
+import "./src/styles/global.less"

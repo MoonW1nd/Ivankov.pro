@@ -6,14 +6,13 @@ type AShapeType = 'develop' | 'blog' | 'design';
 
 interface IAShapeProps {
     type: AShapeType;
-    url: string;
     reflected?: boolean;
 }
 
-const AShape = ({type, url}: IAShapeProps) => {
+const AShape = ({type}: IAShapeProps) => {
     const Component = types[type];
 
-    return <Component url={url} />;
+    return <Component />;
 };
 
 export default AShape;

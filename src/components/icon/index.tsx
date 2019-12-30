@@ -8,7 +8,7 @@ export type IconType = 'gitHub';
 
 interface IGetClassNameProps {
     className?: string;
-    size: 's' | 'm' | 'l';
+    size?: 's' | 'm' | 'l';
 }
 
 export interface IIconProps extends IGetClassNameProps {
