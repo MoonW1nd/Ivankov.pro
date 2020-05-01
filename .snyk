@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.14.0
+version: v1.14.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -99,3 +99,226 @@ patch:
   SNYK-JS-TREEKILL-536781:
     - snyk > snyk-sbt-plugin > tree-kill:
         patched: '2019-12-12T03:01:10.143Z'
+  SNYK-JS-LODASH-567746:
+    - antd > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - commitizen > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-transformer-remark > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - snyk > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - antd > rc-form > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - antd > rc-steps > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - antd > rc-table > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - antd > rc-tabs > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - commitizen > inquirer > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - snyk > inquirer > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > @babel/core > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > css-loader > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > eslint > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > eslint-plugin-flowtype > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > eslint-plugin-graphql > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > gatsby-telemetry > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > gatsby-cli > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > gatsby-plugin-page-creator > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > webpack-merge > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > graphql-toolkit > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - snyk > @snyk/dep-graph > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - snyk > snyk-config > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - snyk > snyk-mvn-plugin > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - snyk > snyk-nodejs-lockfile-parser > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - snyk > snyk-nuget-plugin > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - antd > rc-editor-mention > rc-editor-core > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > @babel/core > @babel/traverse > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > babel-eslint > @babel/traverse > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > graphql-tag-pluck > @babel/traverse > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > eslint > inquirer > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > eslint > table > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > graphql-toolkit > graphql-import > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > eslint-plugin-graphql > graphql-config > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > gatsby-cli > gatsby-telemetry > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > gatsby-plugin-page-creator > gatsby-page-utils > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > optimize-css-assets-webpack-plugin > last-call-webpack-plugin > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > react-dev-utils > inquirer > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > webpack-dev-server > http-proxy-middleware > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/core > @graphql-toolkit/common > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - snyk > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - snyk > snyk-go-plugin > graphlib > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - snyk > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - snyk > snyk-nuget-plugin > dotnet-deps-parser > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - snyk > snyk-php-plugin > @snyk/composer-lockfile-parser > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > @babel/core > @babel/helpers > @babel/traverse > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > babel-eslint > @babel/traverse > @babel/generator > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > graphql-tag-pluck > @babel/traverse > @babel/generator > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > babel-preset-gatsby > @babel/preset-env > @babel/plugin-transform-block-scoping > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > gatsby-cli > yurnalist > inquirer > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > eslint-plugin-graphql > graphql-config > graphql-import > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > webpack-dev-server > portfinder > async > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/core > @graphql-toolkit/schema-merging > @graphql-toolkit/common > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/ruby-semver > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > lerna > @lerna/publish > @lerna/prompt > inquirer > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > @babel/core > @babel/helpers > @babel/traverse > @babel/generator > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > babel-eslint > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > graphql-tag-pluck > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > babel-preset-gatsby > @babel/preset-env > @babel/plugin-transform-modules-umd > @babel/helper-module-transforms > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/typescript-operations > @graphql-codegen/visitor-plugin-common > relay-compiler > @babel/core > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/typescript-operations > @graphql-codegen/typescript > @graphql-codegen/plugin-helpers > @graphql-toolkit/common > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > lerna > @lerna/version > @lerna/conventional-commits > conventional-changelog-core > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > lerna > @lerna/publish > @lerna/version > @lerna/prompt > inquirer > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > @babel/core > @babel/helpers > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/typescript-operations > @graphql-codegen/visitor-plugin-common > relay-compiler > @babel/core > @babel/traverse > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > babel-eslint > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > graphql-tag-pluck > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > babel-preset-gatsby > @babel/preset-env > @babel/plugin-transform-unicode-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/typescript-operations > @graphql-codegen/typescript > @graphql-codegen/visitor-plugin-common > relay-compiler > @babel/core > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/typescript-operations > @graphql-codegen/visitor-plugin-common > relay-compiler > babel-preset-fbjs > @babel/plugin-transform-block-scoping > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/typescript-operations > @graphql-codegen/typescript > @graphql-codegen/visitor-plugin-common > @graphql-codegen/plugin-helpers > @graphql-toolkit/common > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > lerna > @lerna/version > @lerna/conventional-commits > conventional-changelog-core > conventional-changelog-writer > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > lerna > @lerna/version > @lerna/conventional-commits > conventional-changelog-core > conventional-commits-parser > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > lerna > @lerna/version > @lerna/conventional-commits > conventional-recommended-bump > conventional-commits-parser > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > lerna > @lerna/publish > @lerna/version > @lerna/conventional-commits > conventional-changelog-core > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > lerna > @lerna/publish > @lerna/npm-publish > @lerna/otplease > @lerna/prompt > inquirer > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/typescript-operations > @graphql-codegen/visitor-plugin-common > relay-compiler > @babel/core > @babel/helpers > @babel/traverse > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/typescript-operations > @graphql-codegen/typescript > @graphql-codegen/visitor-plugin-common > relay-compiler > @babel/core > @babel/traverse > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > @babel/core > @babel/helpers > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > babel-preset-gatsby > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/typescript-operations > @graphql-codegen/typescript > @graphql-codegen/visitor-plugin-common > relay-compiler > babel-preset-fbjs > @babel/plugin-transform-block-scoping > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/typescript-operations > @graphql-codegen/visitor-plugin-common > relay-compiler > babel-preset-fbjs > @babel/plugin-transform-modules-commonjs > @babel/helper-module-transforms > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > lerna > @lerna/publish > @lerna/version > @lerna/conventional-commits > conventional-changelog-core > conventional-changelog-writer > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > lerna > @lerna/publish > @lerna/version > @lerna/conventional-commits > conventional-changelog-core > conventional-commits-parser > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > lerna > @lerna/publish > @lerna/version > @lerna/conventional-commits > conventional-recommended-bump > conventional-commits-parser > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > babel-preset-gatsby > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/generator > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/typescript-operations > @graphql-codegen/visitor-plugin-common > relay-compiler > @babel/core > @babel/helpers > @babel/traverse > @babel/generator > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/typescript-operations > @graphql-codegen/typescript > @graphql-codegen/visitor-plugin-common > relay-compiler > @babel/core > @babel/helpers > @babel/traverse > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/typescript-operations > @graphql-codegen/visitor-plugin-common > relay-compiler > babel-preset-fbjs > @babel/plugin-transform-parameters > @babel/helper-call-delegate > @babel/traverse > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/typescript-operations > @graphql-codegen/typescript > @graphql-codegen/visitor-plugin-common > relay-compiler > babel-preset-fbjs > @babel/plugin-transform-modules-commonjs > @babel/helper-module-transforms > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/typescript-operations > @graphql-codegen/visitor-plugin-common > relay-compiler > @babel/core > @babel/helpers > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > babel-preset-gatsby > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/typescript-operations > @graphql-codegen/typescript > @graphql-codegen/visitor-plugin-common > relay-compiler > @babel/core > @babel/helpers > @babel/traverse > @babel/generator > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/typescript-operations > @graphql-codegen/visitor-plugin-common > relay-compiler > babel-preset-fbjs > @babel/plugin-proposal-class-properties > @babel/helper-create-class-features-plugin > @babel/helper-replace-supers > @babel/traverse > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/typescript-operations > @graphql-codegen/typescript > @graphql-codegen/visitor-plugin-common > relay-compiler > babel-preset-fbjs > @babel/plugin-transform-parameters > @babel/helper-call-delegate > @babel/traverse > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/typescript-operations > @graphql-codegen/typescript > @graphql-codegen/visitor-plugin-common > relay-compiler > @babel/core > @babel/helpers > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/typescript-operations > @graphql-codegen/visitor-plugin-common > relay-compiler > babel-preset-fbjs > @babel/plugin-proposal-class-properties > @babel/helper-create-class-features-plugin > @babel/helper-replace-supers > @babel/traverse > @babel/generator > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/typescript-operations > @graphql-codegen/visitor-plugin-common > relay-compiler > @babel/core > @babel/helpers > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby > babel-preset-gatsby > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/typescript-operations > @graphql-codegen/typescript > @graphql-codegen/visitor-plugin-common > relay-compiler > babel-preset-fbjs > @babel/plugin-proposal-class-properties > @babel/helper-create-class-features-plugin > @babel/helper-replace-supers > @babel/traverse > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/typescript-operations > @graphql-codegen/visitor-plugin-common > relay-compiler > babel-preset-fbjs > @babel/plugin-proposal-class-properties > @babel/helper-create-class-features-plugin > @babel/helper-replace-supers > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/typescript-operations > @graphql-codegen/typescript > @graphql-codegen/visitor-plugin-common > relay-compiler > babel-preset-fbjs > @babel/plugin-proposal-class-properties > @babel/helper-create-class-features-plugin > @babel/helper-replace-supers > @babel/traverse > @babel/generator > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/typescript-operations > @graphql-codegen/typescript > @graphql-codegen/visitor-plugin-common > relay-compiler > @babel/core > @babel/helpers > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/typescript-operations > @graphql-codegen/typescript > @graphql-codegen/visitor-plugin-common > relay-compiler > babel-preset-fbjs > @babel/plugin-proposal-class-properties > @babel/helper-create-class-features-plugin > @babel/helper-replace-supers > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/typescript-operations > @graphql-codegen/visitor-plugin-common > relay-compiler > babel-preset-fbjs > @babel/plugin-proposal-class-properties > @babel/helper-create-class-features-plugin > @babel/helper-replace-supers > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - gatsby-plugin-ts > @graphql-codegen/typescript-operations > @graphql-codegen/typescript > @graphql-codegen/visitor-plugin-common > relay-compiler > babel-preset-fbjs > @babel/plugin-proposal-class-properties > @babel/helper-create-class-features-plugin > @babel/helper-replace-supers > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - commitizen > cz-conventional-changelog > @commitlint/load > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
+    - commitizen > cz-conventional-changelog > @commitlint/load > @commitlint/resolve-extends > lodash:
+        patched: '2020-05-01T02:57:22.538Z'
