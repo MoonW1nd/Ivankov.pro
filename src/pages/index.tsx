@@ -1,64 +1,39 @@
-import {graphql, Link} from 'gatsby';
-import React from 'react';
+import * as React from "react"
+import { graphql, PageProps } from "gatsby"
 
-import styles from './styles.module.css';
+import Layout from "../components/layout"
+import Seo from "../components/seo"
 
-export const query = graphql`
-    query {
-        site {
-            siteMetadata {
-                title
-                description
-            }
+type DataProps = {
+    site: {
+        siteMetadata: {
+            title: string;
         }
     }
-`;
+}
 
-// <ExternalLink href="https://github.com/MoonW1nd" className={styles.link} target={'_blank'}>
-//     <Icon type="gitHub" className={styles.gitHubLogo} />
-// </ExternalLink>
-//
-export const MainPage = () => (
-    <div className={styles.root}>
-        <section className={styles.contentWrapper}>
-            <div className={styles.content}>
-                <div>
-                    <h1 className={styles.name}>
-                        александр
-                        <br />
-                        иванков
-                    </h1>
-                </div>
+type Props = PageProps<DataProps>;
 
-                <div>
-                    <p className={styles.about}>
-                        разработчик
-                        <br />
-                        дизайнер
-                        <br />
-                        vim евангелист
-                        <br />
-                    </p>
+const MainPage = ({ data, location }: Props): JSX.Element => {
+  const siteTitle = data.site.siteMetadata.title
 
-                    <div className={styles.navigationWrapper}>
-                        <div className={styles.navigation}>
-                            <Link to="/develop/" className={styles.navigationItem}>
-                                разработка
-                            </Link>
-
-                            <Link to="/design/" className={styles.navigationItem}>
-                                дизайн
-                            </Link>
-
-                            <Link to="/blog/" className={styles.navigationItem}>
-                                блог
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-);
+  return (
+    <Layout location={location} title={siteTitle}>
+        <Seo title="ivankov: main" />
+        <h1>александр иванков</h1>
+        <p>разработчик интерфейсов</p>
+    </Layout>
+  )
+}
 
 export default MainPage;
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`

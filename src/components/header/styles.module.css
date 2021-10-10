@@ -1,9 +1,0 @@
-.root {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100vw;
-    height: 15vmax;
-
-    padding: 0 5vw;
-}
