@@ -35,7 +35,7 @@
     "typeface-montserrat": "0.0.75"
   },
   "devDependencies": {
-    "husky": "^7.0.2",
+    "husky": "^7.0.0",
     "lint-staged": "^11.2.3",
     "prettier": "2.3.2",
     "stylelint": "^13.13.1",
@@ -55,7 +55,9 @@
     "*.{sass,scss,css,less}": [
       "npm run lint:style --fix",
       "git add"
-    ]
+    ],
+    "*.css": "stylelint --fix",
+    "*.{js,jsx,ts,tsx,json,md}": "prettier --write"
   },
   "repository": {
     "type": "git",
@@ -73,7 +75,8 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "prepare": "husky install"
   },
   "config": {
     "commitizen": {
