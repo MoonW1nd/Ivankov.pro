@@ -1,6 +1,6 @@
 {
-  "extends": "./tsconfig.json",
-  "rules": {
-    "noUnusedLocals": true
-  }
+    "extends": "./tsconfig.json",
+    "rules": {
+        "noUnusedLocals": true
+    }
 }
