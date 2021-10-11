@@ -18,6 +18,7 @@
     "gatsby-plugin-manifest": "^4.0.0-zz-next.1",
     "gatsby-plugin-offline": "^5.0.0-zz-next.1",
     "gatsby-plugin-react-helmet": "^5.0.0-zz-next.1",
+    "gatsby-plugin-react-svg": "^3.0.1",
     "gatsby-plugin-sharp": "^4.0.0-zz-next.1",
     "gatsby-remark-copy-linked-files": "^5.0.0-zz-next.1",
     "gatsby-remark-images": "^6.0.0-zz-next.1",
@@ -82,7 +83,7 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "lint:ts": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+    "lint:ts": "eslint './src/**/*.{js,ts,tsx}' --quiet --fix",
     "lint:style": "npx stylelint ./src/**/*.+\\(sass\\|scss\\|css\\|less\\)",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
     "prepare": "husky install"

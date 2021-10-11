@@ -3,6 +3,7 @@ import {graphql, PageProps} from 'gatsby';
 
 import Layout from '../components/layout';
 import Seo from '../components/seo';
+import MainPage from './main';
 
 type DataProps = {
     site: {
@@ -14,19 +15,18 @@ type DataProps = {
 
 type Props = PageProps<DataProps>;
 
-const MainPage = ({data, location}: Props): JSX.Element => {
+const App = ({data, location}: Props): JSX.Element => {
     const siteTitle = data.site.siteMetadata.title;
 
     return (
         <Layout location={location} title={siteTitle}>
             <Seo title="ivankov: main" />
-            <h1>александр иванков</h1>
-            <p>разработчик интерфейсов</p>
+            <MainPage />
         </Layout>
     );
 };
 
-export default MainPage;
+export default App;
 
 export const pageQuery = graphql`
     query {
