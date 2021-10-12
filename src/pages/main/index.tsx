@@ -1,21 +1,22 @@
 import React from 'react';
-import Icon from './sprite/programmer.inline.svg';
+import BackgroundPicture from './sprite/programmer.inline.svg';
 
-const MainPage = (props: any): JSX.Element => (
-    <main>
-        <div className="backgroud">
-            <Icon />;
-        </div>
+import * as styles from './styles.module.css';
 
-        <section>
-            <h1>
+const MainPage = (): JSX.Element => (
+    <main className={styles.main}>
+        <section className={styles.descriptionBlock}>
+            <h1 className={styles.name}>
                 иванков
                 <br />
                 александр
             </h1>
 
-            <p>разработчик интерфейсов</p>
+            <p className={styles.description}>разработчик интерфейсов</p>
         </section>
+        <div className={styles.backgound}>
+            <BackgroundPicture className={styles.picture} />
+        </div>
     </main>
 );
 
