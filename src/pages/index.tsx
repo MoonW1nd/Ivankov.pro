@@ -1,64 +1,32 @@
-import {graphql, Link} from 'gatsby';
-import React from 'react';
+import * as React from 'react';
+import {graphql, PageProps} from 'gatsby';
 
-import styles from './styles.module.css';
+import MainPage from './main';
 
-export const query = graphql`
+// type DataProps = {
+//     site: {
+//         siteMetadata: {
+//             title: string;
+//         };
+//     };
+// };
+
+// type Props = PageProps<DataProps>;
+
+const App = (): JSX.Element => {
+    // const siteTitle = data.site.siteMetadata.title;
+
+    return <MainPage />;
+};
+
+export default App;
+
+export const pageQuery = graphql`
     query {
         site {
             siteMetadata {
                 title
-                description
             }
         }
     }
 `;
-
-// <ExternalLink href="https://github.com/MoonW1nd" className={styles.link} target={'_blank'}>
-//     <Icon type="gitHub" className={styles.gitHubLogo} />
-// </ExternalLink>
-//
-export const MainPage = () => (
-    <div className={styles.root}>
-        <section className={styles.contentWrapper}>
-            <div className={styles.content}>
-                <div>
-                    <h1 className={styles.name}>
-                        александр
-                        <br />
-                        иванков
-                    </h1>
-                </div>
-
-                <div>
-                    <p className={styles.about}>
-                        разработчик
-                        <br />
-                        дизайнер
-                        <br />
-                        vim евангелист
-                        <br />
-                    </p>
-
-                    <div className={styles.navigationWrapper}>
-                        <div className={styles.navigation}>
-                            <Link to="/develop/" className={styles.navigationItem}>
-                                разработка
-                            </Link>
-
-                            <Link to="/design/" className={styles.navigationItem}>
-                                дизайн
-                            </Link>
-
-                            <Link to="/blog/" className={styles.navigationItem}>
-                                блог
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-);
-
-export default MainPage;

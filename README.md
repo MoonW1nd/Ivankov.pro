@@ -1,4 +1,5 @@
 # My personal site </br>
+
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![CodeFactor](https://www.codefactor.io/repository/github/moonw1nd/ivankov.pro/badge)](https://www.codefactor.io/repository/github/moonw1nd/ivankov.pro)
 
 [Ivankov.pro](http://ivankov.pro/)</br>
@@ -18,5 +19,4 @@ npm start
 
 Site is now running at http://localhost:8000!
 
-> Note: You'll also see a second link: http://localhost:8000/___graphql. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the Gatsby tutorial.
-
+> Note: You'll also see a second link: http://localhost:8000/\_\_\_graphql. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the Gatsby tutorial.
