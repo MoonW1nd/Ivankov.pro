@@ -27,7 +27,7 @@
     "antd": "^3.23.6",
     "classnames": "^2.2.6",
     "commitizen": "^4.0.3",
-    "gatsby": "^2.18.10",
+    "gatsby": "^4.0.0",
     "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby-plugin-less": "^3.0.9",
     "gatsby-plugin-ts": "^2.1.0",
