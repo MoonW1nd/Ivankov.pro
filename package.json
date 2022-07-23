@@ -31,7 +31,7 @@
     "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby-plugin-less": "^3.0.9",
     "gatsby-plugin-ts": "^2.1.0",
-    "gatsby-source-filesystem": "^2.1.29",
+    "gatsby-source-filesystem": "^2.6.0",
     "gatsby-transformer-remark": "^2.6.27",
     "less": "^3.10.3",
     "ramda": "^0.26.1",
