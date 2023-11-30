@@ -26,18 +26,18 @@
     "@types/classnames": "^2.2.9",
     "antd": "^3.23.6",
     "classnames": "^2.2.6",
-    "commitizen": "^4.0.3",
-    "gatsby": "^2.18.10",
+    "commitizen": "^4.1.0",
+    "gatsby": "^4.10.2",
     "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby-plugin-less": "^3.0.9",
-    "gatsby-plugin-ts": "^2.1.0",
+    "gatsby-plugin-ts": "^3.0.0",
     "gatsby-source-filesystem": "^2.1.29",
     "gatsby-transformer-remark": "^2.6.27",
     "less": "^3.10.3",
     "ramda": "^0.26.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "snyk": "^1.278.2"
+    "snyk": "^1.685.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.3",
